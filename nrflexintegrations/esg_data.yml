@@ -1,0 +1,58 @@
+---
+integrations:
+  - name: nri-flex
+    # interval: 30s
+    config:
+      name: Measuring Emissions
+      apis:
+        - name: Sources
+          event_type: Sources
+          url: https://api.worldbank.org/v2/source?page=1&per_page=67
+        - name: Environment, Social and Governance (ESG) Data
+          event_type: EnvironmentSocialandGovernanceData
+          url: https://api.worldbank.org/v2/source/75/indicators?page=1&per_page=75
+        - name: Access To Electricity
+          event_type: AccessToElectricity
+          file: C:\Users\sunil\Desktop\Hackathon\Hack.json
+        - name: AgricultureForestryAndFishingValueAdded
+          event_type: AgricultureForestryAndFishingValueAdded
+          file: C:\Users\sunil\Desktop\Hackathon\AgricultureForestryAndFishingValueAdded.json
+        - name: AccessToCleanFuelsAndTechnologiesForCooking
+          event_type: AccessToCleanFuelsAndTechnologiesForCooking
+          file: C:\Users\sunil\Desktop\Hackathon\AccessToCleanFuelsAndTechnologiesForCooking.json       
+        - name: AnnualFreshwaterWithdrawals
+          event_type: AnnualFreshwaterWithdrawals
+          file: C:\Users\sunil\Desktop\Hackathon\AnnualFreshwaterWithdrawals.json
+        - name: CO2Emissions
+          event_type: CO2Emissions
+          file: C:\Users\sunil\Desktop\Hackathon\CO2Emissions.json
+        - name: ControlOfCorruption
+          event_type: ControlOfCorruption
+          file: C:\Users\sunil\Desktop\Hackathon\ControlOfCorruption.json  
+        - name: ElectricityProductionFromCoalSources
+          event_type: ElectricityProductionFromCoalSources
+          file: C:\Users\sunil\Desktop\Hackathon\ElectricityProductionFromCoalSources.json
+        - name: ForestArea
+          event_type: ForestArea
+          file: C:\Users\sunil\Desktop\Hackathon\ForestArea.json 
+        - name: FoodProductionIndex
+          event_type: FoodProductionIndex
+          file: C:\Users\sunil\Desktop\Hackathon\FoodProductionIndex.json 
+        - name: GDPGrowth
+          event_type: GDPGrowth
+          file: C:\Users\sunil\Desktop\Hackathon\GDPGrowth.json 
+        - name: DigitalGovernanceProjectsDatabase
+          event_type: DigitalGovernanceProjectsDatabase
+          file: C:\Users\sunil\Desktop\Hackathon\DigitalGovernanceProjectsDatabase.json
+        - name: DGPSummary
+          event_type: DGPSummary
+          file: C:\Users\sunil\Desktop\Hackathon\DGPSummary.json      
+        - name: DGTaxanomy
+          event_type: DGTaxanomy
+          file: C:\Users\sunil\Desktop\Hackathon\DGTaxanomy.json           
+        - name: WBGdigitalgovernanceprojects
+          event_type: WBGdigitalgovernanceprojects
+          file: C:\Users\sunil\Desktop\Hackathon\WBGdigitalgovernanceprojects.json         
+          
+          
+          
